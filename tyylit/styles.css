@@ -1,5 +1,6 @@
  
- /*Esti Reittisuunnitelma sivun liikkumisen. Etusivu liikkuu vielä..*/html {
+ /*Esti Reittisuunnitelma sivun liikkumisen. Etusivu liikkuu vielä..*/
+ html {
   overflow-y: scroll;
 }
  
@@ -24,7 +25,7 @@
   }
 
   nav ul.nav .nav-link {
-    font-weight: 500;
+    font-weight: 600;
     color: #333;
     transition: color 0.2s ease-in-out;
   }
@@ -33,6 +34,15 @@
   nav ul.nav .nav-link.active {
     color: blue;
     text-decoration: underline;
+  }
+  /*Navin tausta*/
+  .navbar-wrapper {
+    background-color: rgba(229, 229, 229, 0.5); /* Tumma, läpinäkyvä tausta */
+    padding: 0.5rem 1rem;
+    border-radius: 15px; /* Soikeat reunat */
+    display: inline-block;
+    margin: 0 auto;
+    backdrop-filter: blur(4px); /* Halutessasi taustan sumeus */
   }
 
   /*tulokset.html "Tulosvuodet napin säädöt"*/
@@ -109,7 +119,7 @@
       body {
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         background-color: #f8f9fa;
-        background-image: url('../kuvat/taustakuva.jpg');
+        background-image: url('../kuvat/taustakuvaheader.jpg');
         background-size: cover;         /* Skaalaa taustakuva koko näkymän kokoiseksi */
         background-repeat: no-repeat;   /* Estää kuvan toistamisen */
         background-attachment: fixed;   /* Kiinnittää kuvan paikalleen, vaikka sivua vieritetään */
@@ -119,6 +129,9 @@
         display: flex;
         flex-direction: column;
         min-height: 100vh;
+      }
+      header {
+        background-color: transparent; /* Poistaa vaalean taustavärin */
       }
 
       body::before {
