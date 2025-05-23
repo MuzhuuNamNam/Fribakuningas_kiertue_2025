@@ -37,7 +37,7 @@
   }
   /*Navin tausta*/
   .navbar-wrapper {
-    background-color: rgba(229, 229, 229, 0.5); /* Tumma, läpinäkyvä tausta */
+    background-color: rgba(194, 211, 183, 0.5); /* Tumma, läpinäkyvä tausta */
     padding: 0.5rem 1rem;
     border-radius: 15px; /* Soikeat reunat */
     display: inline-block;
@@ -130,6 +130,7 @@
         flex-direction: column;
         min-height: 100vh;
       }
+      
       header {
         background-color: transparent; /* Poistaa vaalean taustavärin */
       }
