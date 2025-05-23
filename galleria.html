@@ -21,16 +21,33 @@
       </nav>
     </div>
   </header>    
-<main class="container my-4">
-  <div class="row">
-    <section class="col-md-12">
+<div class="container my-5">
+  <h2 class="gallery-title">Kuva<span>galleria</span></h2>
+
+  <!-- Navigointipainikkeet -->
+  <ul class="nav nav-tabs justify-content-center mb-4" id="galleriaTabs" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active" id="kuvat-tab" data-bs-toggle="tab" data-bs-target="#kuvat" type="button" role="tab">Kuvat</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="videot-tab" data-bs-toggle="tab" data-bs-target="#videot" type="button" role="tab">Videot</button>
+    </li>
+  </ul>
+
+  <div class="tab-content">
+    <!-- Kuvagalleria (vanha säilytetty) -->
+    <div class="tab-pane fade show active" id="kuvat" role="tabpanel">
       <div class="box">
-        <h2 class="gallery-title">Kuva<span>galleria</span></h2>
             <div class="col-md-3 gallery-column">
               <img src="kuvat/19.jpg" alt="Kuva kiertueelta">
               <img src="kuvat/4.jpg" alt="Kuva kiertueelta">
               <img src="kuvat/2.jpg" alt="Kuva kiertueelta">
               <img src="kuvat/5.jpg" alt="Kuva kiertueelta">
+              <img src="kuvat/20.jpg" alt="Kuva kiertueelta">
+              <img src="kuvat/21.jpg" alt="Kuva kiertueelta">
+              <img src="kuvat/22.jpg" alt="Kuva kiertueelta">
+              <img src="kuvat/23.jpg" alt="Kuva kiertueelta">
+              <img src="kuvat/39.jpg" alt="Kuva kiertueelta">
             </div>
             <div class="col-md-3 gallery-column">
               <img src="kuvat/8.jpg" alt="Kuva kiertueelta">
@@ -38,8 +55,18 @@
               <img src="kuvat/11.jpg" alt="Kuva kiertueelta">
               <img src="kuvat/12.jpg" alt="Kuva kiertueelta">
               <img src="kuvat/1.jpg" alt="Kuva kiertueelta">
+              <img src="kuvat/24.jpg" alt="Kuva kiertueelta">
+              <img src="kuvat/25.jpg" alt="Kuva kiertueelta">
+              <img src="kuvat/26.jpg" alt="Kuva kiertueelta">
+              <img src="kuvat/27.jpg" alt="Kuva kiertueelta">
+              <img src="kuvat/28.jpg" alt="Kuva kiertueelta">
             </div>
             <div class="col-md-3 gallery-column">
+                <img src="kuvat/29.jpg" alt="Kuva kiertueelta">
+                <img src="kuvat/30.jpg" alt="Kuva kiertueelta">
+                <img src="kuvat/31.jpg" alt="Kuva kiertueelta">
+                <img src="kuvat/32.jpg" alt="Kuva kiertueelta">
+                <img src="kuvat/33.jpg" alt="Kuva kiertueelta">
                 <img src="kuvat/14.jpg" alt="Kuva kiertueelta">
                 <img src="kuvat/15.jpg" alt="Kuva kiertueelta">
                 <img src="kuvat/16.jpg" alt="Kuva kiertueelta">
@@ -47,6 +74,11 @@
                 <img src="kuvat/18.jpg" alt="Kuva kiertueelta">
             </div>
             <div class="col-md-3 gallery-column">
+              <img src="kuvat/34.jpg" alt="Kuva kiertueelta">
+              <img src="kuvat/35.jpg" alt="Kuva kiertueelta">
+              <img src="kuvat/36.jpg" alt="Kuva kiertueelta">
+              <img src="kuvat/37.jpg" alt="Kuva kiertueelta">
+              <img src="kuvat/38.jpg" alt="Kuva kiertueelta">
               <img src="kuvat/13.jpg" alt="Kuva kiertueelta">
               <img src="kuvat/7.jpg" alt="Kuva kiertueelta">
               <img src="kuvat/6.jpg" alt="Kuva kiertueelta">
@@ -54,8 +86,94 @@
               <img src="kuvat/10.jpg" alt="Kuva kiertueelta">
           </div>
       </div>
-    </section>
+    </div>
+
+    <!-- Videogalleria -->
+    <div class="tab-pane fade" id="videot" role="tabpanel">
+      <div class="box">
+        <div class="gallery-column">
+          <video controls>
+            <source src="videot/1.mp4" type="video/mp4">
+          </video>
+          <video controls>
+            <source src="videot/2.mp4" type="video/mp4">
+          </video>
+          <video controls>
+            <source src="videot/3.mp4" type="video/mp4">
+          </video>
+          <video controls>
+            <source src="videot/4.mp4" type="video/mp4">
+          </video>
+          <video controls>
+            <source src="videot/5.mp4" type="video/mp4">
+          </video>
+          <video controls>
+            <source src="videot/6.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="gallery-column">
+          <video controls>
+            <source src="videot/7.mp4" type="video/mp4">
+          </video>
+          <video controls>
+            <source src="videot/8.mp4" type="video/mp4">
+          </video>
+          <video controls>
+            <source src="videot/9.mp4" type="video/mp4">
+          </video>
+          <video controls>
+            <source src="videot/10.mp4" type="video/mp4">
+          </video>
+          <video controls>
+            <source src="videot/11.mp4" type="video/mp4">
+          </video>
+          <video controls>
+            <source src="videot/12.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="gallery-column">
+          <video controls>
+            <source src="videot/13.mp4" type="video/mp4">
+          </video>
+          <video controls>
+            <source src="videot/14.mp4" type="video/mp4">
+          </video>
+          <video controls>
+            <source src="videot/15.mp4" type="video/mp4">
+          </video>
+          <video controls>
+            <source src="videot/16.mp4" type="video/mp4">
+          </video>
+          <video controls>
+            <source src="videot/17.mp4" type="video/mp4">
+          </video>
+          <video controls>
+            <source src="videot/18.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="gallery-column">
+          <video controls>
+            <source src="videot/19.mp4" type="video/mp4">
+          </video>
+          <video controls>
+            <source src="videot/20.mp4" type="video/mp4">
+          </video>
+          <video controls>
+            <source src="videot/21.mp4" type="video/mp4">
+          </video>
+          <video controls>
+            <source src="videot/22.mp4" type="video/mp4">
+          </video>
+          <video controls>
+            <source src="videot/23.mp4" type="video/mp4">
+          </video>>
+        </div>
+        </div>
+      </div>
+    </div>
   </div>
+</div>
+
 </main>
   <footer class="bg-dark text-white text-center py-3">
     <p class="mb-0">© Fribakuningas 2025</p>

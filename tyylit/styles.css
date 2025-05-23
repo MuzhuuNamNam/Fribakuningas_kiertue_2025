@@ -113,6 +113,9 @@
     .box {
       flex-direction: column;
     }
+    .gallery-column {
+      max-width: 100%;
+    }
   }
   
       /*Taustakuvan säädöt */
@@ -171,13 +174,13 @@
         gap: 5px;
       }
       
-      .container .box h2 {
+      .container h2 {
         font-size: 2em;
         font-weight: bolder;
         padding-bottom: 10px;
         border-bottom: 3px solid white;
       }
-      .container .box h2 span {
+      .container h2 span {
         font-size: 2em;
         font-weight: bolder;
         padding-bottom: 10px;
@@ -192,7 +195,15 @@
         color: white; 
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
       }
-      .gallery-column img {
+
+      .gallery-column {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        flex: 1;
+        max-width: 25%;
+      }
+      .gallery-column img, .gallery-column video {
         margin-bottom: 5px;/* kuvien väli vasemmalta oikealle */
         border-radius: 4px;
         width: 100%;
@@ -223,5 +234,32 @@
         color: black;
       }
 
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
 
+/*Kuvagalleria + videot asetukset*/
+.gallery-column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+  max-width: 25%;
+}
 
+.gallery-column img,
+.gallery-column video {
+  width: 100%;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+/* Mobiililaitteilla sarake koko leveydelle */
+@media (max-width: 768px) {
+  .gallery-column {
+    max-width: 100%;
+  }
+}
