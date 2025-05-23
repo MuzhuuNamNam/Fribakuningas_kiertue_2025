@@ -263,3 +263,26 @@
     max-width: 100%;
   }
 }
+/*Gallerian Kuvat/videot napit näkyväksi*/
+
+/* Tab-painikkeiden selkeä ulkoasu */
+.nav-tabs .nav-link {
+  background-color: rgba(238, 234, 236, 0.5); /* vaalea tausta, hieman läpinäkyvä */
+  color: #000; /* tumma teksti */
+  font-weight: bold;
+  border: 1px solid #ccc;
+  margin: 0 2px;
+  border-radius: 0.5rem 0.5rem 0 0;
+  transition: background-color 0.2s ease;
+}
+
+/* Hover-efekti */
+.nav-tabs .nav-link:hover {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+/* Aktiivinen välilehti */
+.nav-tabs .nav-link.active {
+  background-color: #d9edcd;
+  color: #040404;
+}
