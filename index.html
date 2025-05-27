@@ -24,62 +24,138 @@
 <main class="container my-5">
   <h2 class="text-center mb-4">Pelaajaesittelyt</h2>
   <div class="row row-cols-1 row-cols-md-5 g-4">
-    <div class="col pelaaja-kortti">
-      <div class="card h-100 pelaaja-kortti">
-        <img src="kuvat/2.jpg" class="card-img-top" alt="Pelaajaesittely">
-        <div class="card-body">
-          <h5 class="card-title pelaaja-kortti">Jonne Talvitie</h5>
-          <p class="card-text pelaaja-esittely">Moninkertainen kiertuevoittaja, jonka suunta ollut jo muutaman vuoden pelkkää alamäkeä. 
-            Ei hyväksy tilannetta, mutta ei myöskään tee mitään asian parantamiseksi. Hymyileminen kruunu (jonka pitäisi olla luovutettuna Samulle) päässä peilin edessä voi tuoda voiton myös pelikentillä?</p>
-        </div>
+
+<div class="col">
+  <div class="card h-100 pelaaja-kortti">
+    <img src="kuvat/2.jpg" class="card-img-top" alt="Pelaajaesittely">
+    <div class="card-body d-flex flex-column">
+      <h5 class="card-title">Jonne Talvitie</h5>
+      <p class="card-text">
+        Moninkertainen kiertuevoittaja, jonka suunta ollut jo muutaman vuoden pelkkää alamäkeä. 
+        Ei hyväksy tilannetta, mutta ei myöskään tee mitään asian parantamiseksi. Hymyileminen kruunu 
+        (jonka pitäisi olla luovutettuna Samulle) päässä peilin edessä voi tuoda voiton myös pelikentillä?
+      </p>
+      <div class="collapse" id="jonne-lisateksti">
+        <p class="card-text teksti-vihreä">
+          <strong>+...</strong><br>
+          <strong>+...</strong><br>
+        </p>
+        <p class="card-text teksti-punainen">
+          <strong>-...</strong><br>
+          <strong>-...</strong><br>
+        </p>
       </div>
+      <a class="btn btn-primary mt-auto" data-bs-toggle="collapse" href="#jonne-lisateksti" role="button" aria-expanded="false" aria-controls="jonne-lisateksti">
+        Heikkoudet ja vahvuudet
+      </a>
     </div>
-    <div class="col">
-      <div class="card h-100 pelaaja-kortti">
-        <img src="kuvat/20.jpg" class="card-img-top" alt="Pelaajaesittely">
-        <div class="card-body">
-          <h5 class="card-title">Tomi Kero</h5>
-          <p class="card-text pelaaja-esittely">Joka vuotinen uhka jokaiselle, joka halajaa voittaa kiertueen.
-            Vasta kiertueella selviää, onko putti ja lazersuora heitto hallussa ja kylvämässä tuhoa vastustajien voiton tavoitteluille.
-            Tavoitteet on varmasti asetettu korkealle. Kiertue täytyy voittaa, tai sitten kilpaillaan autossa, kenellä lähtee parhaiten: Ressu Redfors - Älä mee biisi.
-          </p>
-        </div>
+  </div>
+</div>
+<div class="col">
+  <div class="card h-100 pelaaja-kortti">
+    <img src="kuvat/20.jpg" class="card-img-top" alt="Pelaajaesittely">
+    <div class="card-body d-flex flex-column">
+      <h5 class="card-title">Tomi Kero</h5>
+      <p class="card-text">
+        Joka vuotinen uhka jokaiselle, joka halajaa voittaa kiertueen. Vasta kiertueella selviää, onko putti ja lazersuora heitto hallussa ja kylvämässä tuhoa vastustajien voiton tavoitteluille.
+          Tavoitteet on varmasti asetettu korkealle. Kiertue täytyy voittaa, tai sitten kilpaillaan autossa, kenellä lähtee parhaiten: Ressu Redfors - Älä mee biisi.
+      </p>
+      <div class="collapse" id="tomi-lisateksti">
+        <p class="card-text teksti-vihreä">
+          <strong>+...</strong><br>
+          <strong>+...</strong><br>
+        </p>
+        <p class="card-text teksti-punainen">
+          <strong>-...</strong><br>
+          <strong>-...</strong><br>
+        </p>>
       </div>
+      <a class="btn btn-primary mt-auto" data-bs-toggle="collapse" href="#tomi-lisateksti" role="button" aria-expanded="false" aria-controls="tomi-lisateksti">
+        Heikkoudet ja vahvuudet
+      </a>
     </div>
-    <div class="col">
-      <div class="card h-100 pelaaja-kortti">
-        <img src="kuvat/21.jpg" class="card-img-top" alt="Pelaajaesittely">
-        <div class="card-body">
-          <h5 class="card-title">Pekko Koski</h5>
-          <p class="card-text pelaaja-esittely">Kiertueella käytettävän laivan kapteeni, joka on viime vuodet panostanut heiton sijasta
-            veljensä kannustamiseen. Voidaankin todeta 2024 kiertueen olleen myös Pekolle menestysvuosi. Nähtäväksi jää, 
-            onko menestys jäänyt hattuun tulevalle kiertueelle. Kulkeeko heitto, vai onko mahaan piirretty <strong>"Samu on paras"</strong>-teksti parasta, mitä väylillä tullaan näkemään.</p>
-        </div>
+  </div>
+</div>
+<div class="col">
+  <div class="card h-100 pelaaja-kortti">
+    <img src="kuvat/21.jpg" class="card-img-top" alt="Pelaajaesittely">
+    <div class="card-body d-flex flex-column">
+      <h5 class="card-title">Pekko Koski</h5>
+      <p class="card-text">
+        Kiertueella käytettävän laivan kapteeni, joka on viime vuodet panostanut heiton sijasta 
+        veljensä kannustamiseen. Voidaankin todeta 2024 kiertueen olleen myös Pekolle menestysvuosi. 
+        Nähtäväksi jää, onko menestys jäänyt hattuun tulevalle kiertueelle. Kulkeeko heitto, 
+        vai onko mahaan piirretty "Samu on paras"-teksti parasta, mitä väylillä tullaan näkemään.
+      </p>
+      <div class="collapse" id="pekko-lisateksti">
+        <p class="card-text teksti-vihreä">
+          <strong>+...</strong><br>
+          <strong>+...</strong><br>
+        </p>
+        <p class="card-text teksti-punainen">
+          <strong>-...</strong><br>
+          <strong>-...</strong><br>
+        </p>
       </div>
+      <a class="btn btn-primary mt-auto" data-bs-toggle="collapse" href="#pekko-lisateksti" role="button" aria-expanded="false" aria-controls="pekko-lisateksti">
+        Heikkoudet ja vahvuudet
+      </a>
     </div>
-    <div class="col">
-      <div class="card h-100 pelaaja-kortti">
-        <img src="kuvat/22.jpg" class="card-img-top" alt="Pelaajaesittely">
-        <div class="card-body">
-          <h5 class="card-title">Samu Koski</h5>
-          <p class="card-text pelaaja-esittely">Vuoden 2024 voittaja! Muiden harjoitellessa, Samun pelitunnit pysyy nollan tietämillä. 
-            Tarkkaan valittu pelistrategia tuotti tulosta 2024. Odotetusti, muut ovat lähteneet ottamaan kopioita Samun huolitellusta pelikirjasta. 
-            Onko Samu kuitenkin jo omaksunut omat konstinsa paremmin ja hymyilee matkalla uusintavoittoon.
-            Ansaitusti ennakkosuosikki tulevalla kiertueella.</p>
-        </div>
+  </div>
+</div>
+<div class="col">
+  <div class="card h-100 pelaaja-kortti">
+    <img src="kuvat/22.jpg" class="card-img-top" alt="Pelaajaesittely">
+    <div class="card-body d-flex flex-column">
+      <h5 class="card-title">Samu Koski</h5>
+      <p class="card-text">
+      Vuoden 2024 voittaja! Muiden harjoitellessa, Samun pelitunnit pysyy nollan tietämillä. Tarkkaan 
+      valittu pelistrategia tuotti tulosta 2024. Odotetusti, muut ovat lähteneet ottamaan kopioita 
+      Samun huolitellusta pelikirjasta. Onko Samu kuitenkin jo omaksunut omat konstinsa paremmin ja 
+      hymyilee matkalla uusintavoittoon. Ansaitusti ennakkosuosikki tulevalla kiertueella.
+      </p>
+      <div class="collapse" id="samu-lisateksti">
+        <p class="card-text teksti-vihreä">
+          <strong>+Hakuna Matata, Samua ei huolet paina.</strong><br>
+          <strong>+"Puut ei hidasta heittelyä"-kortti aina käytössä.</strong><br>
+        </p>
+        <p class="card-text teksti-punainen">
+          <strong>-Harjoittelemattomuuden takia voi mennä hetki, ennen kuin Samu löytää kiekkojen lentoradat.</strong><br>
+          <strong>-Ajatukset talon rakentamisessa?</strong><br>
+        </p>
       </div>
+      <a class="btn btn-primary mt-auto" data-bs-toggle="collapse" href="#samu-lisateksti" role="button" aria-expanded="false" aria-controls="samu-lisateksti">
+        Heikkoudet ja vahvuudet
+      </a>
     </div>
-    <div class="col">
-      <div class="card h-100 pelaaja-kortti">
-        <img src="kuvat/23.jpg" class="card-img-top" alt="Jukka Mattila">
-        <div class="card-body">
-          <h5 class="card-title">Jukka Mattila</h5>
-          <p class="card-text pelaaja-esittely">Susi lampaan villassa. Odotellut vuosia aikaa iskeä tulosluettelossa korkeampien pelaajien kimppuun. 
-            2024 olikin iskun paikka ja nousukausi sai ansaitun aloituksen. Kuinka korkealle tämä napakkaranteinen Teräs-Juissi pystyykään kivuta?</p>
-        </div>
+  </div>
+</div>
+<div class="col">
+  <div class="card h-100 pelaaja-kortti">
+    <img src="kuvat/23.jpg" class="card-img-top" alt="Pelaajaesittely">
+    <div class="card-body d-flex flex-column">
+      <h5 class="card-title">Jukka Mattila</h5>
+      <p class="card-text">
+        Susi lampaan villassa. Odotellut vuosia aikaa iskeä tulosluettelossa korkeampien pelaajien kimppuun. 
+        2024 olikin iskun paikka ja nousukausi sai ansaitun aloituksen. 
+        Kuinka korkealle tämä napakkaranteinen Teräs-Juissi pystyykään kivuta?
+      </p>
+      <div class="collapse" id="jukka-lisateksti">
+        <p class="card-text teksti-vihreä">
+          <strong>+...</strong><br>
+          <strong>+...</strong><br>
+        </p>
+        <p class="card-text teksti-punainen">
+          <strong>-...</strong><br>
+          <strong>-...</strong><br>
+        </p>
       </div>
+      <a class="btn btn-primary mt-auto" data-bs-toggle="collapse" href="#jukka-lisateksti" role="button" aria-expanded="false" aria-controls="jukka-lisateksti">
+        Heikkoudet ja vahvuudet
+      </a>
     </div>
-  <div>
+  </div>
+</div>
   </div>
     <aside class="col-md-12 mt-4 mb-4">
         <h2 class="text-center mb-4">Reissun 2025 tiedot pähkinänkuoressa</h2>

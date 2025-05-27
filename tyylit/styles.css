@@ -233,6 +233,20 @@
         text-shadow: none;
         color: black;
       }
+      
+      .card-text {
+        font-size: 15px;
+        text-shadow: none;
+        color: black;
+      }
+
+      .teksti-vihreä {
+        color: green;
+      }
+      .teksti-punainen {
+        color: red;
+      }
+
 
 .box {
   display: flex;
